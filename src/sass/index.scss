@@ -1,0 +1,294 @@
+$browser-default-font-size: 75px !default;
+;
+@function pr($px) {
+  @return $px / $browser-default-font-size * 1rem;
+}
+
+%one {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%in-b {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+%clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+}
+
+// 文本显示多少行就省略
+@mixin ells($row) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
+// 垂直居中，两端对齐
+.space-between {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+// 垂直居中，水平居中
+.space-around {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+html, body, div, a, p, span, ul, li, input, select, option {
+  box-sizing: border-box;
+}
+
+body{ // 最后删除
+  background-color: #ccc;
+}
+
+/* 环球网校留单模块 */
+.hqwx-ldmk{
+  background-color: #ffffff;
+  padding: pr(60px) 0;
+  margin-bottom: pr(20px);
+  .tab-head{
+    @extend .space-around;
+    margin-bottom: pr(46px);
+    .head-item{
+      .item-bg{
+        width: pr(98px);
+        height: pr(98px);
+        margin-bottom: pr(17px);
+      }
+      .item-text{
+        font-size: pr(24px);
+        line-height: pr(24px);
+        color: #666666;
+      }
+      &:first-child{
+        .item-bg{
+          background: url("../images/icon_1_nor.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.cur{
+          .item-bg{
+            background: url("../images/icon_1_sel.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      &:nth-of-type(2){
+        .item-bg{
+          background: url("../images/icon_2_nor.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.cur{
+          .item-bg{
+            background: url("../images/icon_2_sel.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .item-bg{
+          background: url("../images/icon_3_nor.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.cur{
+          .item-bg{
+            background: url("../images/icon_3_sel.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      &:nth-of-type(4){
+        .item-bg{
+          background: url("../images/icon_4_nor.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.cur{
+          .item-bg{
+            background: url("../images/icon_4_sel.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      &.cur{
+        .item-text{
+          font-weight: bold;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .ldmk-cont{
+    margin: 0 pr(40px);
+    .cont-item{
+      display: none;
+      &.cur{
+        display: block;
+      }
+      .item-title{
+        font-size: pr(32px);
+        font-weight: bold;
+        line-height: pr(32px);
+        color: #333333;
+        padding: pr(5px) 0 0 pr(52px);
+        margin-bottom: pr(50px);
+      }
+      .sign-in{
+        font-size: pr(30px);
+        input[type="text"], select {
+          font-family: '微软雅黑';
+          appearance: none; // 去除safari浏览器的内阴影
+          &::-webkit-input-placeholder {
+            color: #666666;
+            font-size: inherit;
+          }
+          &:-moz-placeholder {
+            color: #666666;
+            font-size: inherit;
+          }
+          &::-moz-placeholder {
+            color: #666666;
+            font-size: inherit;
+          }
+          &:-ms-input-placeholder {
+            color: #666666;
+            font-size: inherit;
+          }
+        }
+        select{
+          width: 100%;
+          height: pr(88px);
+          line-height: pr(88px);
+          border-radius: pr(4px);
+          border: solid 1px #eeeeee;
+          color: #333333;
+          margin-bottom: pr(30px);
+          padding: 0 1em;
+          background: url("../images/icon_9.png") no-repeat pr(620px) center #f7f7f7;
+          background-size: pr(26px) pr(16px);
+        }
+        input{
+          width: 100%;
+          height: pr(88px);
+          background-color: #f7f7f7;
+          border-radius: pr(4px);
+          border: solid 1px #eeeeee;
+          margin-bottom: pr(30px);
+        }
+        input[type='submit']{
+          font-size: pr(36px);
+          line-height: pr(88px);
+          color: #ffffff;
+        }
+      }
+      &:first-child{
+        .item-title{
+          background: url("../images/icon_5.png") no-repeat left center;
+          background-size: pr(36px) pr(36px);
+        }
+        .sign-in{
+          input[type='submit']{
+            background-image: linear-gradient(0deg,
+                #d93f4c 0%,
+                #e85562 100%);
+            box-shadow: 0 pr(10px) pr(25px)
+            0 rgba(100, 2, 10, 0.15);
+          }
+        }
+      }
+      &:nth-of-type(2){
+        .item-title{
+          background: url("../images/icon_6.png") no-repeat left center;
+          background-size: pr(36px) pr(36px);
+          .highlight{
+            color: #2bc27c;
+          }
+        }
+        .sign-in{
+          input[type='submit']{
+            background-image: linear-gradient(0deg,
+                #28be79 0%,
+                #3ed891 100%);
+            box-shadow: 0px pr(10px) pr(25px) 0px
+            rgba(0, 106, 57, 0.15);
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .item-title{
+          background: url("../images/icon_7.png") no-repeat left center;
+          background-size: pr(36px) pr(36px);
+          .highlight{
+            color: #3687d2;
+          }
+        }
+        .sign-in{
+          input[type='submit']{
+            background-image: linear-gradient(0deg,
+                #3384cf 0%,
+                #4797e1 100%);
+            box-shadow: 0 pr(10px) pr(25px) 0
+            rgba(0, 46, 88, 0.15);
+          }
+        }
+      }
+      &:nth-of-type(4){
+        .item-title{
+          background: url("../images/icon_8.png") no-repeat left center;
+          background-size: pr(36px) pr(36px);
+          .highlight{
+            color: #3687d2;
+          }
+        }
+        .sign-in{
+          input[type='submit']{
+            background-image: linear-gradient(0deg,
+                #e76626 0%,
+                #fb7c3d 100%);
+            box-shadow: 0 pr(10px) pr(25px) 0
+            rgba(0, 46, 88, 0.15);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 精品备考资料 */
+.jpbksl{
+  background-color: #ffffff;
+  .jpbksl-title{
+    font-size: pr(46px);
+    font-weight: bold;
+    line-height: pr(62px);
+    color: #333333;
+    text-align: center;
+
+    .icon{
+      @extend %in-b;
+      width: pr(52px);
+      height: pr(62px);
+      background: url("../images/hot.png") no-repeat;
+      background-size: 100% 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
