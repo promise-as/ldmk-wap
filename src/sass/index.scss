@@ -56,10 +56,6 @@ html, body, div, a, p, span, ul, li, input, select, option {
   box-sizing: border-box;
 }
 
-body{ // 最后删除
-  background-color: #ccc;
-}
-
 /* 环球网校留单模块 */
 .hqwx-ldmk{
   background-color: #ffffff;
@@ -274,13 +270,15 @@ body{ // 最后删除
 /* 精品备考资料 */
 .jpbksl{
   background-color: #ffffff;
+  padding: pr(50px) pr(40px) pr(60px);
+  margin-bottom: pr(20px);
   .jpbksl-title{
     font-size: pr(46px);
     font-weight: bold;
     line-height: pr(62px);
     color: #333333;
     text-align: center;
-
+    margin-bottom: pr(44px);
     .icon{
       @extend %in-b;
       width: pr(52px);
@@ -288,6 +286,583 @@ body{ // 最后删除
       background: url("../images/hot.png") no-repeat;
       background-size: 100% 100%;
       vertical-align: middle;
+    }
+  }
+  .jpbksl-radio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: pr(30px);
+    grid-row-gap: pr(40px);
+    margin-bottom: pr(50px);
+    .radio-item{
+      font-size: pr(32px);
+      font-weight: bold;
+      line-height: pr(40px);
+      color: #333333;
+      @extend %one;
+      .circle{
+        @extend %in-b;
+        width: pr(40px);
+        height: pr(40px);
+        background-color: #faf5f5;
+        border-radius: 50%;
+        border: solid 1px #d93f4c;
+        vertical-align: middle;
+        margin-right: pr(12px);
+      }
+      &.cur{
+        .circle{
+          border: solid pr(12px) #d93f4c;
+        }
+
+      }
+    }
+  }
+  .sign-in{
+    font-size: pr(30px);
+    input[type="text"], select {
+      font-family: '微软雅黑';
+      appearance: none; // 去除safari浏览器的内阴影
+      &::-webkit-input-placeholder {
+        color: #666666;
+        font-size: inherit;
+      }
+      &:-moz-placeholder {
+        color: #666666;
+        font-size: inherit;
+      }
+      &::-moz-placeholder {
+        color: #666666;
+        font-size: inherit;
+      }
+      &:-ms-input-placeholder {
+        color: #666666;
+        font-size: inherit;
+      }
+    }
+    select{
+      width: 100%;
+      height: pr(88px);
+      line-height: pr(88px);
+      border-radius: pr(4px);
+      border: solid 1px #eeeeee;
+      color: #333333;
+      margin-bottom: pr(30px);
+      padding: 0 1em;
+      background: url("../images/icon_9.png") no-repeat pr(620px) center #f7f7f7;
+      background-size: pr(26px) pr(16px);
+    }
+    input{
+      width: 100%;
+      height: pr(88px);
+      background-color: #f7f7f7;
+      border-radius: pr(4px);
+      border: solid 1px #eeeeee;
+      margin-bottom: pr(30px);
+    }
+    input[type='submit']{
+      width: auto;
+      font-size: pr(36px);
+      line-height: pr(88px);
+      color: #ffffff;
+      margin-bottom: 0;
+      background-color: transparent;
+      border: none;
+    }
+    .submit-btn{
+      @extend %in-b;
+      width: 100%;
+      background-image: linear-gradient(0deg,
+          #d93f4c 0%,
+          #e85562 100%);
+      box-shadow: 0 pr(10px) pr(25px) 0
+      rgba(100, 2, 10, 0.15);
+      border-radius: pr(4px);
+      text-align: center;
+      .btn-icon{
+        @extend %in-b;
+        width: pr(34px);
+        height: pr(34px);
+        background: url("../images/icon_10.png") no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/* 考点精讲班 */
+.kdjjb{
+  background-color: #ffcccf;
+  padding: pr(30px);
+  margin-bottom: pr(20px);
+  .kdjjb-cont{
+    background-color: #ffffff;
+    border-radius: pr(15px);
+    padding-top: pr(24px);
+    padding-bottom: pr(40px);
+    .cont-title{
+      font-size: pr(46px);
+      font-weight: bold;
+      line-height: pr(62px);
+      color: #333333;
+      text-align: center;
+      background: url("../images/icon_11.png") no-repeat right top;
+      background-size: pr(180px) pr(64px);
+      padding-top: pr(33px);
+      margin-right: pr(40px);
+      .icon{
+        @extend %in-b;
+        width: pr(52px);
+        height: pr(62px);
+        background: url("../images/hot.png") no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+      }
+    }
+    .cont-subtitle{
+      width: 100%;
+      font-size: pr(32px);
+      line-height: pr(64px);
+      color: #333333;
+      padding-top: pr(30px);
+      margin-bottom: pr(36px);
+      display: flex;
+      justify-content: center;
+      .icon{
+        @extend %in-b;
+        width: pr(64px);
+        height: pr(64px);
+        background: url("../images/icon_12.png") no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+        margin-right: pr(18px);
+      }
+      .text{
+        width: pr(520px);
+      }
+    }
+    .cont-teacher{
+      margin: 0 pr(50px) pr(55px);
+      height: pr(178px);
+      background-color: #fff0f1;
+      border-radius: pr(89px);
+      border: solid 1px #d93f4c;
+      padding-right: pr(10px);
+      display: flex;
+      align-items: center;
+      .bg{
+        width: pr(178px);
+        height: pr(178px);
+        margin-top: -1px;
+        margin-left: -1px;
+        margin-right: pr(18px);
+      }
+      .text{
+        font-size: pr(32px);
+        font-weight: bold;
+        line-height: pr(48px);
+        color: #d93f4c;
+      }
+    }
+    .cont-btn{
+      display: block;
+      width: pr(630px);
+      line-height: pr(88px);
+      margin: 0 auto;
+      background-image: linear-gradient(0deg,
+      #d93f4c 0%,
+      #e85562 100%);
+      box-shadow: 0 pr(10px) pr(25px) 0
+      rgba(100, 2, 10, 0.15);
+      border-radius: pr(8px);
+      font-size: pr(36px);
+      color: #ffffff;
+      text-align: center;
+      .icon{
+        @extend %in-b;
+        width: pr(36px);
+        height: pr(32px);
+        background: url("../images/icon_13.png") no-repeat;
+        background-size: 100% 100%;
+        margin-right: pr(16px);
+      }
+    }
+  }
+}
+
+/* 环球网校兑课中心 */
+.hqwx-dkzx{
+  background-color: #ffcccf;
+  padding: pr(30px);
+  margin-bottom: pr(20px);
+  .dkzx-cont{
+    border-radius: pr(15px);
+    padding: pr(30px);
+    background-color: #fff;
+    .cont-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: pr(46px);
+      line-height: pr(48px);
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: pr(40px);
+      .title-l, .title-r{
+        @extend %in-b;
+        width: pr(102px);
+        height: pr(6px);
+      }
+      .title-l{
+        background: url("../images/title_l.png");
+        background-size: 100% 100%;
+        margin-right: pr(18px);
+      }
+      .title-r{
+        background: url("../images/title_r.png");
+        background-size: 100% 100%;
+        margin-left: pr(18px);
+      }
+    }
+    .cont-radio{
+      background: url("../images/bg_1.png") no-repeat center;
+      background-size: auto 100%;
+      .radio-item{
+        font-size: pr(32px);
+        font-weight: bold;
+        line-height: pr(40px);
+        color: #333333;
+        margin-bottom: pr(40px);
+        @extend %one;
+        text-align: center;
+        .circle{
+          @extend %in-b;
+          width: pr(40px);
+          height: pr(40px);
+          background-color: #faf5f5;
+          border-radius: 50%;
+          border: solid 1px #d93f4c;
+          vertical-align: middle;
+          margin-right: pr(12px);
+        }
+        &.cur{
+          .circle{
+            border: solid pr(12px) #d93f4c;
+          }
+
+        }
+      }
+    }
+    .cont-btn{
+      display: block;
+      line-height: pr(88px);
+      margin: 0 auto;
+      background-image: linear-gradient(0deg,
+          #d93f4c 0%,
+          #e85562 100%);
+      box-shadow: 0 pr(10px) pr(25px) 0
+      rgba(100, 2, 10, 0.15);
+      border-radius: pr(8px);
+      font-size: pr(36px);
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+
+/* 新人专享 */
+.xrzx{
+  background-image: linear-gradient(0deg,
+      #ef5c78 0%,
+      #fda496 100%);
+  padding: pr(30px) pr(20px) pr(20px);
+  .xrzx-cont{
+    padding: pr(20px);
+    @extend .space-between;
+    .cont-price{
+      font-size: pr(46px);
+      font-weight: bold;
+      //line-height: pr(96px);
+      color: #df514c;
+      padding-left: pr(30px);
+      padding-right: pr(30px);
+      border-right: 1px solid #ffb5b2;
+      vertical-align: baseline;
+      span{
+        font-size: pr(96px);
+      }
+    }
+    .cont-time{
+      font-size: pr(36px);
+      line-height: pr(36px);
+      font-weight: bold;
+      color: #333333;
+      span{
+        display: block;
+        width: pr(200px);
+        height: pr(38px);
+        line-height: pr(38px);
+        background-color: #df514c;
+        text-align: center;
+        font-size: pr(25px);
+        color: #fff;
+        margin-top: pr(8px);
+      }
+    }
+    .cont-btn{
+      @extend %in-b;
+      width: pr(156px);
+      height: pr(156px);
+    }
+  }
+}
+
+/* 新人专享 */
+.xrzx_2{
+  background-color: #fff;
+  padding: pr(30px) pr(20px) pr(20px);
+  .xrzx-cont{
+    padding: pr(20px) pr(20px) pr(20px) pr(204px);
+    @extend .space-between;
+    box-shadow: 0px pr(15px) pr(25px) 0px
+    rgba(0, 86, 168, 0.15);
+    border-radius: pr(90px);
+    .cont-detail{
+      width: pr(345px);
+      font-size: pr(46px);
+      line-height: pr(70px);
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      .detail-text{
+        span{
+          @extend %in-b;
+          font-size: pr(70px);
+          color: #ffe317;
+          vertical-align: baseline;
+        }
+      }
+      .detail-time{
+        font-size: pr(26px);
+        line-height: pr(26px);
+        color: #b2daff;
+      }
+    }
+    .cont-btn{
+      @extend %in-b;
+      width: pr(140px);
+      height: pr(140px);
+    }
+  }
+}
+
+/* 初级职称名师精品课 */
+.jpk{
+  background-color: #4f9aed;
+  padding: pr(30px);
+  .jpk-cont{
+    background-color: #ffffff;
+    border-radius: pr(15px);
+    padding: pr(30px) 0;
+    .cont-title{
+      font-size: pr(46px);
+      font-weight: bold;
+      line-height: pr(62px);
+      color: #333333;
+      text-align: center;
+      margin-bottom: pr(44px);
+      .icon{
+        @extend %in-b;
+        width: pr(52px);
+        height: pr(62px);
+        background: url("../images/hot.png") no-repeat;
+        background-size: 100% 100%;
+        vertical-align: middle;
+      }
+    }
+    .cont-teacher{
+      margin: 0 pr(50px) pr(60px);
+      height: pr(160px);
+      padding-right: pr(10px);
+      display: flex;
+      align-items: center;
+
+      background-image: linear-gradient(0deg,
+          #236ce4 0%,
+          #45aff9 100%);
+      box-shadow: 0px pr(15px) pr(25px) 0px
+      rgba(0, 86, 168, 0.15);
+      border-radius: pr(80px);
+      .bg{
+        width: pr(170px);
+        height: pr(170px);
+        //margin-top: pr(-2px);
+        //margin-left: pr(-6px);
+        margin-right: pr(18px);
+      }
+      .text{
+        font-size: pr(32px);
+        font-weight: bold;
+        line-height: pr(48px);
+        color: #fff;
+      }
+    }
+    .cont-detail{
+      margin-left: pr(70px);
+      padding-left: pr(10px);
+      padding-right: pr(60px);
+      height: pr(363px);
+      overflow-y: hidden;
+      .detail-row{
+        font-size: pr(36px);
+        line-height: pr(60px);
+        display: flex;
+        border-left: 1px dashed #4f9aed;
+        .row-icon{
+          @extend %in-b;
+          width: pr(18px);
+          height: pr(60px);
+          background: url("../images/icon_14.png") no-repeat center;
+          background-size: 100% auto;
+          margin-left: pr(-10px);
+          margin-right: pr(10px);
+        }
+        .row-zj{
+          color: #333333;
+          margin-right: pr(20px);
+        }
+        .row-text{
+          flex: 1;
+          color: #666666;
+        }
+      }
+    }
+    .cont-more{
+      display: block;
+      width: pr(60px);
+      height: pr(48px);
+      background: url("../images/icon_15.png") no-repeat;
+      background-size: 100% 100%;
+      margin: 0 auto pr(25px);
+      cursor: pointer;
+    }
+    .cont-btn{
+      display: block;
+      width: pr(630px);
+      line-height: pr(88px);
+      margin: 0 auto;
+      background-image: linear-gradient(0deg,
+          #236ce4 0%,
+          #45aff9 100%);
+      box-shadow: 0 pr(10px) pr(25px) 0
+      rgba(0, 86, 168, 0.15);
+      border-radius: pr(8px);
+      font-size: pr(36px);
+      color: #ffffff;
+      text-align: center;
+      .icon{
+        @extend %in-b;
+        width: pr(36px);
+        height: pr(32px);
+        background: url("../images/icon_13.png") no-repeat;
+        background-size: 100% 100%;
+        margin-right: pr(16px);
+      }
+    }
+  }
+}
+
+/* 中华会计网校免费资料领取 */
+.zwkjw-mfzllq{
+  background-color: #4f9aed;
+  padding: pr(30px);
+  .mfzllq-title{
+    font-size: pr(56px);
+    font-weight: bold;
+    line-height: pr(88px);
+    color: #ffffff;
+    span{
+      color: #ffdf0b;
+    }
+  }
+  .mfzllq-cont{
+    background-color: #aad2ff;
+    border-radius: pr(8px);
+    padding: pr(30px);
+    .cont-sel{
+      background-color: #ffffff;
+      border-radius: pr(8px);
+      padding: pr(30px);
+      margin-bottom: pr(30px);
+      select{
+        width: 100%;
+        height: pr(88px);
+        line-height: pr(88px);
+        font-size: pr(30px);
+        border-radius: pr(4px);
+        border: solid 1px #eeeeee;
+        color: #333333;
+        margin-bottom: pr(30px);
+        padding: 0 1em;
+        background: url("../images/icon_9.png") no-repeat pr(515px) center #f7f7f7;
+        background-size: pr(26px) pr(16px);
+      }
+      .cont-radio{
+        background: url("../images/bg_1.png") no-repeat center;
+        background-size: auto 100%;
+        .radio-item{
+          font-size: pr(32px);
+          font-weight: bold;
+          line-height: pr(40px);
+          color: #333333;
+          margin-bottom: pr(40px);
+          @extend %one;
+          text-align: center;
+          .circle{
+            @extend %in-b;
+            width: pr(40px);
+            height: pr(40px);
+            background-color: #faf5f5;
+            border-radius: 50%;
+            border: solid 1px #d93f4c;
+            vertical-align: middle;
+            margin-right: pr(12px);
+          }
+          &.cur{
+            .circle{
+              border: solid pr(12px) #d93f4c;
+            }
+
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .cont-btn{
+      display: block;
+      width: 100%;
+      line-height: pr(88px);
+      margin: 0 auto;
+      background-image: linear-gradient(0deg,
+          #236ce4 0%,
+          #45aff9 100%);
+      box-shadow: 0 pr(10px) pr(25px) 0
+      rgba(0, 86, 168, 0.15);
+      border-radius: pr(8px);
+      font-size: pr(36px);
+      color: #ffffff;
+      text-align: center;
+      .icon{
+        @extend %in-b;
+        width: pr(36px);
+        height: pr(32px);
+        background: url("../images/download.png") no-repeat;
+        background-size: 100% 100%;
+        margin-right: pr(16px);
+      }
     }
   }
 }
