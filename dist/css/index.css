@@ -1,17 +1,17 @@
 @charset "UTF-8";
-.jpbksl .jpbksl-radio .radio-item, .hqwx-dkzx .dkzx-cont .cont-radio .radio-item, .zwkjw-mfzllq .mfzllq-cont .cont-sel .cont-radio .radio-item {
+.jpbksl .jpbksl-radio .radio-item, .hqwx-dkzx .dkzx-cont .cont-radio .radio-item, .zwkjw-mfzllq .mfzllq-cont .cont-sel .cont-radio .radio-item, .jzks-zl .zl-cont .cont-row .row-title, .jdxxw-jpk .jpk-cont ul li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.jpbksl .jpbksl-title .icon, .jpbksl .jpbksl-radio .radio-item .circle, .jpbksl .sign-in .submit-btn, .jpbksl .sign-in .submit-btn .btn-icon, .kdjjb .kdjjb-cont .cont-title .icon, .kdjjb .kdjjb-cont .cont-subtitle .icon, .kdjjb .kdjjb-cont .cont-btn .icon, .hqwx-dkzx .dkzx-cont .cont-title .title-l, .hqwx-dkzx .dkzx-cont .cont-title .title-r, .hqwx-dkzx .dkzx-cont .cont-radio .radio-item .circle, .xrzx .xrzx-cont .cont-btn, .xrzx_2 .xrzx-cont .cont-detail .detail-text span, .xrzx_2 .xrzx-cont .cont-btn, .jpk .jpk-cont .cont-title .icon, .jpk .jpk-cont .cont-detail .detail-row .row-icon, .jpk .jpk-cont .cont-btn .icon, .zwkjw-mfzllq .mfzllq-cont .cont-sel .cont-radio .radio-item .circle, .zwkjw-mfzllq .mfzllq-cont .cont-btn .icon {
+.jpbksl .jpbksl-title .icon, .jpbksl .jpbksl-radio .radio-item .circle, .jpbksl .sign-in .submit-btn, .jpbksl .sign-in .submit-btn .btn-icon, .kdjjb .kdjjb-cont .cont-title .icon, .kdjjb .kdjjb-cont .cont-subtitle .icon, .kdjjb .kdjjb-cont .cont-btn .icon, .hqwx-dkzx .dkzx-cont .cont-title .title-l, .hqwx-dkzx .dkzx-cont .cont-title .title-r, .hqwx-dkzx .dkzx-cont .cont-radio .radio-item .circle, .xrzx .xrzx-cont .cont-btn, .xrzx_2 .xrzx-cont .cont-detail .detail-text span, .xrzx_2 .xrzx-cont .cont-btn, .jpk .jpk-cont .cont-title .icon, .jpk .jpk-cont .cont-detail .detail-row .row-icon, .jpk .jpk-cont .cont-btn .icon, .zwkjw-mfzllq .mfzllq-cont .cont-sel .cont-radio .radio-item .circle, .zwkjw-mfzllq .mfzllq-cont .cont-btn .icon, .jzks-zl .zl-cont .cont-row .row-num, .jzks-zl .zl-cont .cont-btn .icon, .jzks-zl .zl-cont .cont-lint a, .jpbkzl_2 .jpbkzl_2-cont .cont-title .icon, .jpbkzl_2 .jpbkzl_2-cont .cont-detail .detail-row:before, .jpbkzl_2 .jpbkzl_2-cont .cont-btn .btn-l, .jpbkzl_2 .jpbkzl_2-cont .cont-btn .btn-r, .ctzfdb .sign-in .ctzfdb-btn, .jdxxw-jpk .jpk-title .icon, .jdxxw-jpk .jpk-cont ul li:before, .jdxxw-jpk .jpk-btn, .jdxxw-jpk .jpk-btn .icon, .jdxxw-jpk .jpk-btn span {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-.space-between, .xrzx .xrzx-cont, .xrzx_2 .xrzx-cont {
+.space-between, .xrzx .xrzx-cont, .xrzx_2 .xrzx-cont, .jdxxw-jpk .jpk-trait, .jdxxw-jpk .jpk-hd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,11 +38,6 @@
       justify-content: space-around;
 }
 
-html, body, div, a, p, span, ul, li, input, select, option {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /* 环球网校留单模块 */
 .hqwx-ldmk {
   background-color: #ffffff;
@@ -67,42 +62,42 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-ldmk .tab-head .head-item:first-child .item-bg {
-  background: url("../images/icon_1_nor.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_1_nor.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:first-child.cur .item-bg {
-  background: url("../images/icon_1_sel.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_1_sel.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(2) .item-bg {
-  background: url("../images/icon_2_nor.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_2_nor.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(2).cur .item-bg {
-  background: url("../images/icon_2_sel.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_2_sel.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(3) .item-bg {
-  background: url("../images/icon_3_nor.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_3_nor.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(3).cur .item-bg {
-  background: url("../images/icon_3_sel.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_3_sel.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(4) .item-bg {
-  background: url("../images/icon_4_nor.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_4_nor.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .hqwx-ldmk .tab-head .head-item:nth-of-type(4).cur .item-bg {
-  background: url("../images/icon_4_sel.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_4_sel.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -172,7 +167,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
   color: #333333;
   margin-bottom: 0.4rem;
   padding: 0 1em;
-  background: url("../images/icon_9.png") no-repeat 8.26667rem center #f7f7f7;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_9.png") no-repeat 8.26667rem center #f7f7f7;
   background-size: 0.34667rem 0.21333rem;
 }
 
@@ -192,7 +187,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-ldmk .ldmk-cont .cont-item:first-child .item-title {
-  background: url("../images/icon_5.png") no-repeat left center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_5.png") no-repeat left center;
   background-size: 0.48rem 0.48rem;
 }
 
@@ -204,7 +199,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-ldmk .ldmk-cont .cont-item:nth-of-type(2) .item-title {
-  background: url("../images/icon_6.png") no-repeat left center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_6.png") no-repeat left center;
   background-size: 0.48rem 0.48rem;
 }
 
@@ -220,7 +215,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-ldmk .ldmk-cont .cont-item:nth-of-type(3) .item-title {
-  background: url("../images/icon_7.png") no-repeat left center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_7.png") no-repeat left center;
   background-size: 0.48rem 0.48rem;
 }
 
@@ -236,7 +231,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-ldmk .ldmk-cont .cont-item:nth-of-type(4) .item-title {
-  background: url("../images/icon_8.png") no-repeat left center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_8.png") no-repeat left center;
   background-size: 0.48rem 0.48rem;
 }
 
@@ -270,7 +265,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpbksl .jpbksl-title .icon {
   width: 0.69333rem;
   height: 0.82667rem;
-  background: url("../images/hot.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/hot.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
 }
@@ -344,7 +339,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
   color: #333333;
   margin-bottom: 0.4rem;
   padding: 0 1em;
-  background: url("../images/icon_9.png") no-repeat 8.26667rem center #f7f7f7;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_9.png") no-repeat 8.26667rem center #f7f7f7;
   background-size: 0.34667rem 0.21333rem;
 }
 
@@ -380,7 +375,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpbksl .sign-in .submit-btn .btn-icon {
   width: 0.45333rem;
   height: 0.45333rem;
-  background: url("../images/icon_10.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_10.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
 }
@@ -405,7 +400,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
   line-height: 0.82667rem;
   color: #333333;
   text-align: center;
-  background: url("../images/icon_11.png") no-repeat right top;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_11.png") no-repeat right top;
   background-size: 2.4rem 0.85333rem;
   padding-top: 0.44rem;
   margin-right: 0.53333rem;
@@ -414,7 +409,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .kdjjb .kdjjb-cont .cont-title .icon {
   width: 0.69333rem;
   height: 0.82667rem;
-  background: url("../images/hot.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/hot.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
 }
@@ -437,7 +432,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .kdjjb .kdjjb-cont .cont-subtitle .icon {
   width: 0.85333rem;
   height: 0.85333rem;
-  background: url("../images/icon_12.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_12.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
   margin-right: 0.24rem;
@@ -495,7 +490,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .kdjjb .kdjjb-cont .cont-btn .icon {
   width: 0.48rem;
   height: 0.42667rem;
-  background: url("../images/icon_13.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_13.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.21333rem;
 }
@@ -536,19 +531,19 @@ html, body, div, a, p, span, ul, li, input, select, option {
 }
 
 .hqwx-dkzx .dkzx-cont .cont-title .title-l {
-  background: url("../images/title_l.png");
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/title_l.png");
   background-size: 100% 100%;
   margin-right: 0.24rem;
 }
 
 .hqwx-dkzx .dkzx-cont .cont-title .title-r {
-  background: url("../images/title_r.png");
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/title_r.png");
   background-size: 100% 100%;
   margin-left: 0.24rem;
 }
 
 .hqwx-dkzx .dkzx-cont .cont-radio {
-  background: url("../images/bg_1.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/bg_1.png") no-repeat center;
   background-size: auto 100%;
 }
 
@@ -681,6 +676,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpk {
   background-color: #4f9aed;
   padding: 0.4rem;
+  margin-bottom: 0.26667rem;
 }
 
 .jpk .jpk-cont {
@@ -701,7 +697,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpk .jpk-cont .cont-title .icon {
   width: 0.69333rem;
   height: 0.82667rem;
-  background: url("../images/hot.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/hot.png") no-repeat;
   background-size: 100% 100%;
   vertical-align: middle;
 }
@@ -756,7 +752,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpk .jpk-cont .cont-detail .detail-row .row-icon {
   width: 0.24rem;
   height: 0.8rem;
-  background: url("../images/icon_14.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_14.png") no-repeat center;
   background-size: 100% auto;
   margin-left: -0.13333rem;
   margin-right: 0.13333rem;
@@ -778,7 +774,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
   display: block;
   width: 0.8rem;
   height: 0.64rem;
-  background: url("../images/icon_15.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_15.png") no-repeat;
   background-size: 100% 100%;
   margin: 0 auto 0.33333rem;
   cursor: pointer;
@@ -802,7 +798,7 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .jpk .jpk-cont .cont-btn .icon {
   width: 0.48rem;
   height: 0.42667rem;
-  background: url("../images/icon_13.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_13.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.21333rem;
 }
@@ -847,12 +843,12 @@ html, body, div, a, p, span, ul, li, input, select, option {
   color: #333333;
   margin-bottom: 0.4rem;
   padding: 0 1em;
-  background: url("../images/icon_9.png") no-repeat 6.86667rem center #f7f7f7;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_9.png") no-repeat 6.86667rem center #f7f7f7;
   background-size: 0.34667rem 0.21333rem;
 }
 
 .zwkjw-mfzllq .mfzllq-cont .cont-sel .cont-radio {
-  background: url("../images/bg_1.png") no-repeat center;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/bg_1.png") no-repeat center;
   background-size: auto 100%;
 }
 
@@ -901,7 +897,465 @@ html, body, div, a, p, span, ul, li, input, select, option {
 .zwkjw-mfzllq .mfzllq-cont .cont-btn .icon {
   width: 0.48rem;
   height: 0.42667rem;
-  background: url("../images/download.png") no-repeat;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/download.png") no-repeat;
   background-size: 100% 100%;
   margin-right: 0.21333rem;
+}
+
+/* 建筑考生专属内部资料 */
+.jzks-zl {
+  background-color: #fff;
+  margin-bottom: 0.26667rem;
+  padding-bottom: 0.26667rem;
+}
+
+.jzks-zl .zl-title {
+  width: 5.68rem;
+  height: 1.10667rem;
+  line-height: 1.10667rem;
+  background-image: linear-gradient(-12deg, #cf3340 0%, #db535f 100%);
+  -webkit-box-shadow: 0.05333rem 0.04rem 0.38667rem 0px rgba(207, 51, 64, 0.3);
+          box-shadow: 0.05333rem 0.04rem 0.38667rem 0px rgba(207, 51, 64, 0.3);
+  border-radius: 0.26667rem 0.26667rem 0px 0px;
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.jzks-zl .zl-cont {
+  width: 9.17333rem;
+  border: 1px solid #e6e6e6;
+  margin: 0 auto;
+  padding: 0.4rem 0.32rem 0.4rem 0.4rem;
+}
+
+.jzks-zl .zl-cont .cont-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
+.jzks-zl .zl-cont .cont-row .row-num {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0.02667rem 0.02667rem 0.13333rem 0px rgba(207, 51, 64, 0.27);
+          box-shadow: 0.02667rem 0.02667rem 0.13333rem 0px rgba(207, 51, 64, 0.27);
+  border-radius: 0.26667rem 0.26667rem 0.02667rem 0.26667rem;
+  border: solid 0.02667rem #cf3340;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #cf3340;
+  margin-right: 0.24rem;
+}
+
+.jzks-zl .zl-cont .cont-row .row-title {
+  font-size: 0.4rem;
+  color: #444444;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.jzks-zl .zl-cont .cont-row .row-rs {
+  font-size: 0.34667rem;
+  color: #666666;
+}
+
+.jzks-zl .zl-cont .cont-row .row-rs span {
+  color: #d13946;
+}
+
+.jzks-zl .zl-cont .cont-btn {
+  display: block;
+  width: 100%;
+  line-height: 1.04rem;
+  font-size: 0.4rem;
+  color: #cf3340;
+  text-align: center;
+  background-color: #ffe1e3;
+  border-radius: 0.08rem;
+  border: solid 1px #f0aab0;
+  margin-bottom: 0.4rem;
+}
+
+.jzks-zl .zl-cont .cont-btn .icon {
+  width: 0.29333rem;
+  height: 0.34667rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/download_2.png") no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.17333rem;
+}
+
+.jzks-zl .zl-cont .cont-lint {
+  font-size: 0.34667rem;
+  line-height: 0.53333rem;
+  color: #444444;
+  text-align: center;
+}
+
+.jzks-zl .zl-cont .cont-lint a {
+  color: #cf3340;
+  text-decoration: underline;
+}
+
+/* 精品备考资料2 */
+.jpbkzl_2 {
+  background-color: #fed9a9;
+  border-radius: 0.16rem;
+  padding: 0.32rem 0.33333rem 0.28rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont {
+  -webkit-box-shadow: 0.02667rem 0.02667rem 0.13333rem 0px rgba(164, 36, 47, 0.31);
+          box-shadow: 0.02667rem 0.02667rem 0.13333rem 0px rgba(164, 36, 47, 0.31);
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_17.png") no-repeat top right #fff;
+  background-size: 1.92rem 1.76rem;
+  border-radius: 0.14667rem;
+  position: relative;
+  padding: 0.4rem 0.24rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-value {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.13333rem;
+  font-size: 0.29333rem;
+  line-height: 0.37333rem;
+  color: #ffd955;
+  text-align: center;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-value span {
+  display: block;
+  font-size: 0.37333rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-title {
+  font-size: 0.61333rem;
+  font-weight: bold;
+  line-height: 0.82667rem;
+  color: #333333;
+  text-align: center;
+  margin-right: 0.53333rem;
+  margin-bottom: 0.26667rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-title .icon {
+  width: 0.69333rem;
+  height: 0.82667rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_16.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-detail {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0.05333rem 0.17333rem 0px rgba(247, 161, 160, 0.35);
+          box-shadow: 0px 0.05333rem 0.17333rem 0px rgba(247, 161, 160, 0.35);
+  border-radius: 0.12rem;
+  padding: 0.26667rem 0.48rem;
+  margin-bottom: 0.30667rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-detail .detail-row {
+  font-size: 0.34667rem;
+  line-height: 0.6rem;
+  color: #666666;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-detail .detail-row:before {
+  content: '';
+  width: 0.10667rem;
+  height: 0.10667rem;
+  background-color: #d94e5a;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-btn {
+  display: block;
+  width: 100%;
+  line-height: 1.17333rem;
+  margin: 0 auto;
+  background-image: linear-gradient(-12deg, #cf3340 0%, #db535f 100%);
+  border-radius: 0.10667rem;
+  font-size: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.32rem;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-btn .btn-l {
+  width: 0.29333rem;
+  height: 0.36rem;
+  margin-right: 0.12rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_18.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-btn .btn-r {
+  width: 0.28rem;
+  height: 0.36rem;
+  margin-left: 0.16rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_19.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.jpbkzl_2 .jpbkzl_2-cont .cont-hint {
+  font-size: 0.34667rem;
+  line-height: 0.44rem;
+  color: #666666;
+  text-align: center;
+}
+
+/* 初高中辅导班 */
+.ctzfdb {
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/bg_2.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 2.18667rem 0.66667rem 0.48rem;
+  margin-bottom: 0.26667rem;
+}
+
+.ctzfdb .sign-in {
+  font-size: 0.4rem;
+}
+
+.ctzfdb .sign-in select {
+  font-family: '微软雅黑';
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.ctzfdb .sign-in select::-webkit-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ctzfdb .sign-in select:-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ctzfdb .sign-in select::-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ctzfdb .sign-in select:-ms-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ctzfdb .sign-in select {
+  width: 100%;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-radius: 0.05333rem;
+  border: solid 1px #eeeeee;
+  color: #333333;
+  margin-bottom: 0.4rem;
+  padding: 0 1em;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_20.png") no-repeat 94% center #f7f7f7;
+  background-size: 0.34667rem 0.21333rem;
+}
+
+.ctzfdb .sign-in .ctzfdb-btn {
+  width: 100%;
+  font-size: 0.42667rem;
+  line-height: 1.17333rem;
+  color: #ffffff;
+  background-image: linear-gradient(-20deg, #11a0ed 0%, #4bbcf9 100%);
+  -webkit-box-shadow: 0px 0.12rem 0.12rem 0px rgba(50, 175, 244, 0.2);
+          box-shadow: 0px 0.12rem 0.12rem 0px rgba(50, 175, 244, 0.2);
+  border-radius: 0.12rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* 考研、出国留学认准新东方在线 */
+.ky-xdf {
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/bg_3.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 2.45333rem 0.52rem 0.36rem;
+}
+
+.ky-xdf .sign-in {
+  font-size: 0.4rem;
+}
+
+.ky-xdf .sign-in input[type="text"], .ky-xdf .sign-in select {
+  font-family: '微软雅黑';
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.ky-xdf .sign-in input[type="text"]::-webkit-input-placeholder, .ky-xdf .sign-in select::-webkit-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ky-xdf .sign-in input[type="text"]:-moz-placeholder, .ky-xdf .sign-in select:-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ky-xdf .sign-in input[type="text"]::-moz-placeholder, .ky-xdf .sign-in select::-moz-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ky-xdf .sign-in input[type="text"]:-ms-input-placeholder, .ky-xdf .sign-in select:-ms-input-placeholder {
+  color: #666666;
+  font-size: inherit;
+}
+
+.ky-xdf .sign-in select {
+  width: 100%;
+  height: 1.09333rem;
+  line-height: 1.09333rem;
+  border-radius: 0.05333rem;
+  color: #333333;
+  margin-bottom: 0.29333rem;
+  padding: 0 1em;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_22.png") no-repeat 94% center #f7f7f7;
+  background-size: 0.34667rem 0.21333rem;
+}
+
+.ky-xdf .sign-in input {
+  width: 100%;
+  height: 1.09333rem;
+  background-color: #f7f7f7;
+  border-radius: 0.05333rem;
+  border: solid 1px #eeeeee;
+  margin-bottom: 0.29333rem;
+}
+
+.ky-xdf .sign-in input[type='submit'] {
+  font-size: 0.42667rem;
+  line-height: 1.09333rem;
+  color: #ffffff;
+  background-image: linear-gradient(-41deg, #ff912c 0%, #ffaa5d 100%);
+  -webkit-box-shadow: 0px 0.05333rem 0.17333rem 0px rgba(0, 178, 184, 0.26);
+          box-shadow: 0px 0.05333rem 0.17333rem 0px rgba(0, 178, 184, 0.26);
+  border-radius: 0.05333rem;
+  margin-bottom: 0;
+  border: none;
+}
+
+/* 简单学习网精品课 */
+.jdxxw-jpk {
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/bg_4.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 0.62667rem 0.66667rem 0.66667rem;
+}
+
+.jdxxw-jpk .jpk-title {
+  font-size: 0.61333rem;
+  font-weight: bold;
+  line-height: 0.73333rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0.58667rem;
+}
+
+.jdxxw-jpk .jpk-title .icon {
+  width: 0.73333rem;
+  height: 0.73333rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_23.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 0.13333rem;
+}
+
+.jdxxw-jpk .jpk-trait {
+  margin-bottom: 0.6rem;
+}
+
+.jdxxw-jpk .jpk-trait .trait-item {
+  width: 2.38667rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  background-color: #ffffff;
+  border-radius: 0.16rem;
+  border: solid 1px #41a8dd;
+  font-size: 0.34667rem;
+  color: #13a3ed;
+  text-align: center;
+}
+
+.jdxxw-jpk .jpk-hd {
+  margin-bottom: 0.44rem;
+}
+
+.jdxxw-jpk .jpk-hd .hd-item {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  color: #333333;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_24.png") no-repeat left center;
+  background-size: 0.2rem 0.2rem;
+  padding-left: 0.4rem;
+}
+
+.jdxxw-jpk .jpk-cont {
+  border-radius: 7px;
+  border: solid 1px #41a8dd;
+  padding: 0.4rem 0.36rem;
+  margin-bottom: 0.26667rem;
+}
+
+.jdxxw-jpk .jpk-cont ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 0.4rem;
+}
+
+.jdxxw-jpk .jpk-cont ul li {
+  width: 2.62667rem;
+  font-size: 0.37333rem;
+  line-height: 0.37333rem;
+  color: #666666;
+}
+
+.jdxxw-jpk .jpk-cont ul li:before {
+  content: '';
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: #666666;
+  border-radius: 50%;
+  margin-right: 0.13333rem;
+  vertical-align: middle;
+}
+
+.jdxxw-jpk .jpk-btn {
+  width: 100%;
+  height: 1.22667rem;
+  line-height: 1.22667rem;
+  background-image: linear-gradient(-20deg, #11a0ed 0%, #4bbcf9 100%);
+  -webkit-box-shadow: 0px 0.12rem 0.12rem 0px rgba(50, 175, 244, 0.2);
+          box-shadow: 0px 0.12rem 0.12rem 0px rgba(50, 175, 244, 0.2);
+  border-radius: 0.12rem;
+  font-size: 0.42667rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.jdxxw-jpk .jpk-btn .icon {
+  width: 0.44rem;
+  height: 0.26667rem;
+  background: url("https://img.thea.cn/public/platform/thea/201909/hbj/ldmk-wap/images/icon_25.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: top;
+  margin-top: 0.14667rem;
+}
+
+.jdxxw-jpk .jpk-btn span {
+  margin-left: -0.26667rem;
 }

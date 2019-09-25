@@ -25,6 +25,6 @@ $(function () {
   $('.jpk .cont-more').click(function () {
     $(this).prev('.cont-detail').css({
       'height': 'auto'
-    })
+    });
   });
 });
